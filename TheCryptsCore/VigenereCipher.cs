@@ -42,7 +42,7 @@ namespace TheCryptsCore
                 encryptedArray[i] = GetIntsCharValue(shiftedCharValue);
             }
 
-            return new string(encryptedArray);
+            return new string(encryptedArray); 
         }
 
         private static int GetCharValue(char c)

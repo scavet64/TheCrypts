@@ -5,8 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TheCryptsGUI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="700" Width="525">
     <Grid>
+        <StackPanel Margin="20,0">
+            <Label FontSize="26" HorizontalAlignment="Center">Vigenère Cipher</Label>
+
+            <Label >Encrypted Text</Label>
+            <TextBox Height="200" Margin="0,0,0,20" Text="{Binding PlainText}" />
+
+            <Label >Key</Label>
+            <TextBox Height="30" Margin="0,0,0,20" Text="{Binding Key}" />
+
+            <Label >Encrypted Text</Label>
+            <TextBox Height="200" Margin="0,0" Text="{Binding CipherText}" />
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Width="100" Height="25" Margin="20" Command="{Binding Commands[Encrypt]}" >Encrypt</Button>
+                <Button Width="100" Height="25" Margin="20" Command="{Binding Commands[Decrypt]}" >Decrypt</Button>
+            </StackPanel>
+
+        </StackPanel>
         
     </Grid>
 </Window>

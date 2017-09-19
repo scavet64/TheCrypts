@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TheCryptsCore;
 
 namespace TheCryptsGUI
 {
@@ -23,6 +24,9 @@ namespace TheCryptsGUI
         public MainWindow()
         {
             InitializeComponent();
+            string tmp = VigenereCipher.EncryptMessage("ATTACKATDAWN", "LEMONLEMONLE");
+
+            VigenereCipher.DecryptMessage(tmp, "LEMONLEMONLE");
         }
     }
 }

@@ -93,5 +93,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TheCryptsCore\TheCryptsCore.csproj">
+      <Project>{35cd9216-1b06-40a2-aa52-48ab1712eac6}</Project>
+      <Name>TheCryptsCore</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

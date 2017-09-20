@@ -29,6 +29,7 @@ namespace TheCryptsGUI
             string tmp = VigenereCipher.EncryptMessage("ATTACKATDAWN", "LEMONLEMONLE");
 
             VigenereCipher.DecryptMessage(tmp, "LEMONLEMONLE");
+            VigenereCipher.test();
         }
     }
 }
